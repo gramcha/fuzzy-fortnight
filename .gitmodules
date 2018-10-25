@@ -7,3 +7,6 @@
 [submodule "microservices/composite/word-query-service"]
 	path = microservices/composite/word-query-service
 	url = https://github.com/gramcha/word-query-service.git
+[submodule "microservices/core/sounds-like-query-service"]
+	path = microservices/core/sounds-like-query-service
+	url = https://github.com/gramcha/sounds-like-query-service.git
