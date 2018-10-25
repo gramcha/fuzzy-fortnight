@@ -4,3 +4,6 @@
 [submodule "microservices/support/zuul-edge-service"]
 	path = microservices/support/zuul-edge-service
 	url = https://github.com/gramcha/zuul-edge-service.git
+[submodule "microservices/composite/word-query-service"]
+	path = microservices/composite/word-query-service
+	url = https://github.com/gramcha/word-query-service.git
