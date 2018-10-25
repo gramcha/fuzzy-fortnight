@@ -4,3 +4,6 @@
 [submodule "eureka-client-service"]
 	path = eureka-client-service
 	url = https://github.com/gramcha/eureka-client-service.git
+[submodule "zuul-service"]
+	path = zuul-service
+	url = https://github.com/gramcha/zuul-service.git
