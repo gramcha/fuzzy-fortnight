@@ -1,9 +1,0 @@
-[submodule "eureka-service-discovery"]
-	path = eureka-service-discovery
-	url = https://github.com/gramcha/eureka-service-discovery.git
-[submodule "eureka-client-service"]
-	path = eureka-client-service
-	url = https://github.com/gramcha/eureka-client-service.git
-[submodule "zuul-service"]
-	path = zuul-service
-	url = https://github.com/gramcha/zuul-service.git
