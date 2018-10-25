@@ -1,0 +1,6 @@
+[submodule "microservices/support/eureka-discovery-service"]
+	path = microservices/support/eureka-discovery-service
+	url = https://github.com/gramcha/eureka-discovery-service.git
+[submodule "microservices/support/zuul-edge-service"]
+	path = microservices/support/zuul-edge-service
+	url = https://github.com/gramcha/zuul-edge-service.git
