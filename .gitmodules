@@ -13,3 +13,6 @@
 [submodule "microservices/core/synonyms-query-service"]
 	path = microservices/core/synonyms-query-service
 	url = https://github.com/gramcha/synonyms-query-service.git
+[submodule "microservices/core/antonyms-query-service"]
+	path = microservices/core/antonyms-query-service
+	url = https://github.com/gramcha/antonyms-query-service.git
