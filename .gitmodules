@@ -10,3 +10,6 @@
 [submodule "microservices/core/sounds-like-query-service"]
 	path = microservices/core/sounds-like-query-service
 	url = https://github.com/gramcha/sounds-like-query-service.git
+[submodule "microservices/core/synonyms-query-service"]
+	path = microservices/core/synonyms-query-service
+	url = https://github.com/gramcha/synonyms-query-service.git
