@@ -16,3 +16,6 @@
 [submodule "microservices/core/antonyms-query-service"]
 	path = microservices/core/antonyms-query-service
 	url = https://github.com/gramcha/antonyms-query-service.git
+[submodule "microservices/support/auth-service"]
+	path = microservices/support/auth-service
+	url = https://github.com/gramcha/auth-service.git
