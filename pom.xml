@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.springframework</groupId>
+    <artifactId>fuzzy-fortnight</artifactId>
+    <version>0.1.0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>microservices/support/eureka-discovery-service</module>
+        <module>microservices/support/zuul-edge-service</module>
+        <module>microservices/support/auth-service</module>
+        <module>microservices/composite/word-query-service</module>
+        <module>microservices/core/antonyms-query-service</module>
+        <module>microservices/core/sounds-like-query-service</module>
+        <module>microservices/core/synonyms-query-service</module>
+    </modules>
+
+</project>
