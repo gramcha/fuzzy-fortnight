@@ -11,6 +11,8 @@
     <modules>
         <module>microservices/support/eureka-discovery-service</module>
         <module>microservices/support/zuul-edge-service</module>
+        <module>microservices/support/turbine-aggregator-service</module>
+        <module>microservices/support/hystrix-dashboard-service</module>
         <module>microservices/support/auth-service</module>
         <module>microservices/composite/word-query-service</module>
         <module>microservices/core/antonyms-query-service</module>
