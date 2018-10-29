@@ -19,3 +19,9 @@
 [submodule "microservices/support/auth-service"]
 	path = microservices/support/auth-service
 	url = https://github.com/gramcha/auth-service.git
+[submodule "microservices/support/hystrix-dashboard-service"]
+	path = microservices/support/hystrix-dashboard-service
+	url = https://github.com/gramcha/hystrix-dashboard-service.git
+[submodule "microservices/support/turbine-aggregator-service"]
+	path = microservices/support/turbine-aggregator-service
+	url = https://github.com/gramcha/turbine-aggregator-service.git
