@@ -1,0 +1,74 @@
+version: "3.5"
+
+#Docker host machine IP - copy below export command without # and execute before executing docker-compose command. or copy into bash_profile or bash.rc file.
+#export DOCKER_HOST_IP=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1'`
+
+services:
+  eureka-discovery-service:
+    build: ./microservices/support/eureka-discovery-service
+    ports:
+      - "8761:8761"
+  zuul-edge-service:
+    build: ./microservices/support/zuul-edge-service
+    ports:
+      - "8762:8762"
+    depends_on:
+      - eureka-discovery-service
+    links:
+      - eureka-discovery-service:eureka-discovery-service
+  auth-service:
+    build: ./microservices/support/auth-service
+    ports:
+      - "8084:8084"
+    depends_on:
+      - eureka-discovery-service
+    links:
+      - eureka-discovery-service:eureka-discovery-service
+  antonyms-query-service:
+    build: ./microservices/core/antonyms-query-service
+    ports:
+      - "8083:8083"
+    depends_on:
+      - eureka-discovery-service
+    links:
+      - eureka-discovery-service:eureka-discovery-service
+  hystrix-dashboard-service:
+    build: ./microservices/support/hystrix-dashboard-service
+    ports:
+      - "7979:7979"
+    depends_on:
+      - eureka-discovery-service
+    links:
+      - eureka-discovery-service:eureka-discovery-service
+  sounds-like-query-service:
+    build: ./microservices/core/sounds-like-query-service
+    ports:
+      - "8081:8081"
+    depends_on:
+      - eureka-discovery-service
+    links:
+      - eureka-discovery-service:eureka-discovery-service
+  synonyms-query-service:
+    build: ./microservices/core/synonyms-query-service
+    ports:
+      - "8082:8082"
+    depends_on:
+      - eureka-discovery-service
+    links:
+      - eureka-discovery-service:eureka-discovery-service
+  turbine-aggregator-service:
+    build: ./microservices/support/turbine-aggregator-service
+    ports:
+      - "7878:7878"
+    depends_on:
+      - eureka-discovery-service
+    links:
+      - eureka-discovery-service:eureka-discovery-service
+  word-query-service:
+    build: ./microservices/composite/word-query-service
+    ports:
+      - "8080:8080"
+    depends_on:
+      - eureka-discovery-service
+    links:
+      - eureka-discovery-service:eureka-discovery-service
