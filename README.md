@@ -1,6 +1,6 @@
 
 # fuzzy-fortnight
-This provides provides a starting point for understanding common Microservice architecture patterns by example of a proof-of-concept application built with Spring Boot, Spring Cloud, and Docker.
+This project provides a starting point for understanding common Microservice architecture patterns by example of a proof-of-concept application built with Spring Boot, Spring Cloud, and Docker.
 
 ### Tech Stack
 The Technical Stack used for this service is,
