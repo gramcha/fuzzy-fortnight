@@ -32,3 +32,7 @@ This project is structured like below directory tree.
 ```
 
 Each component inside the composite, core and support folders are maven modules and git sub modules.
+
+
+### System Diagram
+![alt text](https://github.com/gramcha/fuzzy-fortnight/blob/master/fuzzy-fortnight.jpg)
