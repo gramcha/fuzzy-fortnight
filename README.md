@@ -66,13 +66,16 @@ Input - elefint
 Output - elephant
 ```
 
+#### Requirement 4
+Apply API rate limit on above API's per user.
+
 ### System Diagram
 ![alt text](https://github.com/gramcha/fuzzy-fortnight/blob/master/fuzzy-fortnight.jpg)
 
 ### Infrastructure Services
 eureka-discovery-service - It discovers the rest of the services in this system. All the other systems register them into this service. This is basically server side discovery pattern. We are using the Netflix Eureka server for that. This is developed using Spring Boot, Cloud with Eureka server.
 
-**zuul-edge-service** - It is an edge service which is exposed to the public internet. It acts as a gateway to all other micro services. We are using the Netflix Zuul for that. It has routes for functional services. It also makes authorisation based on the bear token in request. It is developed using Spring Boot, Cloud, Security with Zuul.
+**zuul-edge-service** - It is an edge service which is exposed to the public internet. It acts as a gateway to all other micro services. We are using the Netflix Zuul for that. It has routes for functional services. It also makes authorisation based on the bear token in request. It is developed using Spring Boot, Cloud, Security with Zuul. Based on the authorized user name applies API rate limit and it is configurable at application.yml file.
 
 **ribbon** - It is part of zuul edge service where zuul uses for routing the request to more than one instance.
 
