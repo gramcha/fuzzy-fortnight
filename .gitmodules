@@ -25,3 +25,6 @@
 [submodule "microservices/support/turbine-aggregator-service"]
 	path = microservices/support/turbine-aggregator-service
 	url = https://github.com/gramcha/turbine-aggregator-service.git
+[submodule "microservices/ui-services/friendly-fortnight"]
+	path = microservices/ui-services/friendly-fortnight
+	url = https://github.com/gramcha/friendly-fortnight.git
