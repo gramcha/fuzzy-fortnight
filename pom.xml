@@ -18,6 +18,7 @@
         <module>microservices/core/antonyms-query-service</module>
         <module>microservices/core/sounds-like-query-service</module>
         <module>microservices/core/synonyms-query-service</module>
+        <module>microservices/ui-services/friendly-fortnight</module>
     </modules>
 
 </project>
